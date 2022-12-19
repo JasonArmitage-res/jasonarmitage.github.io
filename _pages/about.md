@@ -2,25 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='mailto:jason.armitage@uzh.ch'>Affiliation</a> University of Zurich
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: ja_githubsite.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>jason.armitage@uzh.ch</p>
 
-news: true  # includes a list of news items
+
+news: # true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-My name is Jason and I'm a researcher and PhD candidate in multimodal machine learning.
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My name is Jason and I research multimodal machine learning and embodied AI at the University of Zurich. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Prior to UZH, I conducted research on multimodal machine learning at the University of Bonn and worked in digital product development teams at the BBC and Disney on digital video services, games, and mobile apps. My academic background is in computational cognitive neuroscience (University of London, Birkbeck), data science (University of Stirling), and machine learning (UC San Diego).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Right now, I am working on developing learning methods and resources to train artificial agents in virtual environments. Specific areas of interest are the representation of time in tasks and data, sequence modeling methods for multimodal data, and extending cross-disciplinary links between machine learning and computational cognitive neuroscience. 
+
+
