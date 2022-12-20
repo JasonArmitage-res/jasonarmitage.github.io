@@ -15,7 +15,7 @@ Citation: see end of page.
 
 <a href="https://ceur-ws.org/Vol-2611/paper5.pdf">Our paper</a> proposes training a framework for multimodal classification with an additional objective trained using variational inference. 
 
-Systems trained with supervised learning rely on the availability of large-scale labelled data. In the case of multimodal learning, this further requires combined inputs for each entity. In cases where data are limited, neural networks learn sampling noise with subsequent impacts on generalisation.  
+Systems trained with supervised learning rely on the availability of large-scale labelled data. In the case of multimodal learning, this further requires combined inputs for each entity. In cases where data are limited, variance is high and neural networks learn sampling noise with subsequent impacts on generalisation.  
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -34,7 +34,7 @@ We propose a novel system for multimodal classification that makes use of a seco
     </div>
 </div>
 <div class="caption">
-    Performance on the test partition of MM-IMDb (weighted-F1 and mean over 5 cycles) for our best variant, the baseline GMU model, and a verion of the model excluding variational inference as a secondary objective.
+    Performance on the test partition of MM-IMDb (weighted-F1 and mean over 5 cycles) for our best variant, the baseline GMU model, and a version of the model excluding variational inference as a secondary objective.
 </div>
 
 Further results and analysis are available <a href="https://ceur-ws.org/Vol-2611/paper5.pdf">in the paper</a>. Please cite our work if you find it useful for your own research:

@@ -2,7 +2,7 @@
 layout: page
 title: priority map
 description: a priority map module for vision-and-language navigation #a project with a background image
-img: assets/img/pri_nav.png
+img: assets/img/pri_nav_thumb.png
 importance: 1
 category: papers
 ---
@@ -24,7 +24,7 @@ lower level cues on salient features to identify relevant information:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/pri_nav_crop.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/pri_nav_crop_thumb.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/timeline_resize.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -71,7 +71,7 @@ A comparison of the purple and grey bars also demonstrates how our framework add
     Performance of transformer-based systems on the Touchdown task for VLN.
 </div>
 
-Please use <a href="https://github.com/JasonArmitage-res/PM-VLN">our code</a> and add a citation if you find it interesting:
+Please use <a href="https://github.com/JasonArmitage-res/PM-VLN">our code</a> and <a href="https://zenodo.org/record/6891965#.YtwoS3ZBxD8">data</a> - and add a citation if you find it interesting:
 
 Armitage, Jason, Leonardo Impett, and Rico Sennrich. "A Priority Map for Vision-and-Language Navigation with Trajectory Plans and Feature-Location Cues." arXiv preprint arXiv:2207.11717 (2022).
 Link: <a href="https://arxiv.org/abs/2207.11717">https://arxiv.org/abs/2207.11717</a>
