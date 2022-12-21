@@ -47,7 +47,7 @@ The overall result is that the cross-modal inputs are both synchronised to each 
     A priority map module combines high-level trajectory estimation and low-level feature localisation.
 </div>
 
-The priority map module is a component in a novel framework that takes the input of a transformer-based main model and combines this with the output of the prioritisation process:
+The priority map module is a component in a novel cross-modal machine learning framework that takes the input of a transformer-based main model and combines this with the output of the prioritisation process:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

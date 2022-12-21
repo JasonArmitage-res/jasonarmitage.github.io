@@ -15,7 +15,7 @@ Citation: see end of page.
 
 <a href="https://ceur-ws.org/Vol-2611/paper5.pdf">Our paper</a> proposes training a framework for multimodal classification with an additional objective trained using variational inference. 
 
-Systems trained with supervised learning rely on the availability of large-scale labelled data. In the case of multimodal learning, this further requires combined inputs for each entity. In cases where data are limited, variance is high and neural networks learn sampling noise with subsequent impacts on generalisation.  
+Machine learning systems trained with supervised learning rely on the availability of large-scale labelled data. In the case of multimodal learning, this further requires combined inputs for each entity. In cases where data are limited, variance is high and neural networks learn sampling noise with subsequent impacts on generalisation.  
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

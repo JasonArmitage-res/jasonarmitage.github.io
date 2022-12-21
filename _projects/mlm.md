@@ -26,7 +26,7 @@ resource of diverse data with semantic relationships.
 combines several methods to perform in concurrence cross-modal retrieval and location estimation on highly diverse
 data.
 
-The MLM resource consists of data on 236k human settlements with text summaries, images, coordinates, and triples for each entity. This is used for a novel benchmark task that is designed to evaluate the ability of multitask systems to generalise on diverse data. 
+The MLM resource consists of data on 236k human settlements with text summaries, images, coordinates, and triples for each entity. This is used for a novel benchmark task that is designed to evaluate the ability of multitask machine learning systems to generalise on diverse data. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
