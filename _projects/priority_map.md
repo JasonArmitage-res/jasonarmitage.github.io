@@ -8,14 +8,14 @@ category: papers
 ---
 {% raw %}
 ```
-Paper: https://arxiv.org/abs/2207.11717
+Paper: https://openaccess.thecvf.com/content/WACV2023/html/Armitage_A_Priority_Map_for_Vision-and-Language_Navigation_With_Trajectory_Plans_and_WACV_2023_paper.html
 Code: https://github.com/JasonArmitage-res/PM-VLN
 Data: https://zenodo.org/record/6891965#.YtwoS3ZBxD8
 Citation: see end of page.
 ```
 {% endraw %}
 
-<a href="https://arxiv.org/abs/2207.11717">Our research</a> addresses transformer-based approaches in vision-and-language navigation (VLN). We propose improving current systems with a computational implementation of a mechanism
+<a href="https://openaccess.thecvf.com/content/WACV2023/html/Armitage_A_Priority_Map_for_Vision-and-Language_Navigation_With_Trajectory_Plans_and_WACV_2023_paper.html">Our research</a> addresses transformer-based approaches in vision-and-language navigation (VLN). We propose improving current systems with a computational implementation of a mechanism
 described in neurobiological studies called a priority map. 
 
 As agents move through an urban environment, they are surrounded by signs, moving traffic, and other people. A priority map,
@@ -74,7 +74,7 @@ A comparison of the purple and grey bars also demonstrates how our framework add
 Please use <a href="https://github.com/JasonArmitage-res/PM-VLN">our code</a> and <a href="https://zenodo.org/record/6891965#.YtwoS3ZBxD8">data</a> - and add a citation if you find it interesting:
 
 Armitage, Jason, Leonardo Impett, and Rico Sennrich. "A Priority Map for Vision-and-Language Navigation with Trajectory Plans and Feature-Location Cues." arXiv preprint arXiv:2207.11717 (2022).
-Link: <a href="https://arxiv.org/abs/2207.11717">https://arxiv.org/abs/2207.11717</a>
+Link: <a href="https://openaccess.thecvf.com/content/WACV2023/html/Armitage_A_Priority_Map_for_Vision-and-Language_Navigation_With_Trajectory_Plans_and_WACV_2023_paper.html">https://openaccess.thecvf.com/content/WACV2023/html/Armitage_A_Priority_Map_for_Vision-and-Language_Navigation_With_Trajectory_Plans_and_WACV_2023_paper.html</a>
 
 BibTeX:
 {% raw %}
