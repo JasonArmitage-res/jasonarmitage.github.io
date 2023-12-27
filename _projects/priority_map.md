@@ -24,10 +24,10 @@ lower level cues on salient features to identify relevant information:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img src="assets/img/pri_nav_crop_thumb_1.png" title="example image" class="img-fluid rounded z-depth-1" style="width: 100%; height: auto;">
+        {% include figure.html path="assets/img/pri_nav_crop_thumb_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <img src="assets/img/timeline_resize.png" title="example image" class="img-fluid rounded z-depth-1" style="width: 100%; height: auto;">
+        {% include figure.html path="assets/img/timeline_resize.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
