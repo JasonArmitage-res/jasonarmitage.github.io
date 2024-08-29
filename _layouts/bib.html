@@ -110,8 +110,9 @@
           {% if entry.type == "article" -%}
               {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
               {%- if entry.note -%}
-              {%- capture entrytype -%}{{ entrytype }}<br><span><strong>Status:</strong> {{ entry.note }}</span>{%- endcapture -%}
-          {%- endif -%}
+              {%- capture note_text -%}<br><span><strong>Status:</strong> {{ entry.note }}</span>{%- endcapture -%}
+              {%- assign entrytype = entrytype | append: note_text -%}
+              {%- endif -%}
           {%- elsif proceedings contains entry.type -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
