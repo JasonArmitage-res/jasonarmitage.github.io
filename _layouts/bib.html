@@ -76,6 +76,15 @@
           {%- assign more_authors = author_array_size | minus: author_array_limit -%}
           </div>
 
+          <!-- Note and Date -->
+          <div class="periodical">
+            {%- if entry.note -%}
+              {{ entry.note }}<br>
+            {%- endif -%}
+            {{ entry.year }}
+          </div>
+
+
 
           <!-- Journal/Book title and date -->
           {% assign proceedings = "inproceedings, incollection" | split: ','%}
