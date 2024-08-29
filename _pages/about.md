@@ -21,6 +21,6 @@ My name is Jason and I research multimodal machine learning and embodied AI at t
 
 Prior to UZH, I conducted research on multimodal machine learning at the University of Bonn and worked in digital product development teams at the BBC and Disney on digital video services, games, and mobile apps. My academic background is in cognition and computatation (University of London, Birkbeck), data science (University of Stirling), and machine learning (UC San Diego).
 
-Right now, I am working on methods to align visual and linguistic inputs for embodied AI tasks. Specific areas of interest are sequence modeling methods for multimodal data, methods to train artificial agents in virtual environments, and adapting large vison-language models for tasks with 3D scenes. 
+Right now, I am working on methods to align visual and linguistic inputs for embodied AI tasks. Specific areas of interest are sequence modeling for multimodal data, methods to train artificial agents in virtual environments, and adapting large vison-language models for tasks with 3D scenes. 
 
 
