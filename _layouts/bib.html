@@ -55,11 +55,13 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            
-            {%- if forloop.length > 1 -%}
-              {%- if forloop.first == false -%},&nbsp;{%- endif -%}
-              {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
+
+            {%- if forloop.first == false and forloop.last == false -%}
+              ,&nbsp;
+            {%- elsif forloop.last and forloop.index0 > 0 -%}
+              &nbsp;and&nbsp;
             {%- endif -%}
+
             {%- if author_is_self -%}
               <em>{{author.first}} {{author.last}}</em>
             {%- else -%}
@@ -69,49 +71,19 @@
                 {{author.first}} {{author.last}}
               {%- endif -%}
             {%- endif -%}
+
           {%- endfor -%}
           {%- assign more_authors = author_array_size | minus: author_array_limit -%}
-          
-          {%- assign more_authors_hide = more_authors | append: " more author" -%}
-          {%- if more_authors > 0 -%}
-            {%- if more_authors > 1 -%}
-              {%- assign more_authors_hide = more_authors_hide | append: "s" -%}
-            {%- endif -%}
-            {%- assign more_authors_show = '' -%}
-            {%- for author in entry.author_array offset: author_array_limit -%}
-              {%- assign more_authors_show = more_authors_show | append: author.first | append: " " | append: author.last -%}
-              {%- unless forloop.last -%}
-                {%- assign more_authors_show = more_authors_show | append: ", " -%}
-              {%- endunless -%}
-            {%- endfor -%}
-            , and
-            <span
-                class="more-authors"
-                title="click to view {{more_authors_hide}}"
-                onclick="
-                  var element = $(this);
-                  element.attr('title', '');
-                  var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-                  var cursorPosition = 0;
-                  var textAdder = setInterval(function(){
-                    element.text(more_authors_text.substring(0, cursorPosition + 1));
-                    if (++cursorPosition == more_authors_text.length){
-                      clearInterval(textAdder);
-                    }
-                }, '{{site.more_authors_animation_delay}}');
-                "
-            >{{more_authors_hide}}</span>
-          {%- endif -%}
-
           </div>
+
 
           <!-- Journal/Book title and date -->
           {% assign proceedings = "inproceedings, incollection" | split: ','%}
           {% if entry.type == "article" -%}
               {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
               {%- if entry.note -%}
-              {%- capture note_text -%}<br><span><strong>Status:</strong> {{ entry.note }}</span>{%- endcapture -%}
-              {%- assign entrytype = entrytype | append: note_text -%}
+              {%- capture note_text -%}{{ entry.note }}{%- endcapture -%}
+              {%- assign entrytype = entrytype | append: '<br>' | append: note_text -%}
               {%- endif -%}
           {%- elsif proceedings contains entry.type -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
@@ -122,13 +94,14 @@
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.year -%}
-            {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
+            {%- capture entryyear -%}<br>{{entry.year}}{%- endcapture -%}
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
         {%- endif %}
+
         
           <!-- Links/Buttons -->
           <div class="links">
